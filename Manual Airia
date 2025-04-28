@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MacGillivray Chatbot</title>
+</head>
+<body style="margin:0; padding:0; display:flex; justify-content:center; align-items:center; height:100vh; background-color:#f8f9fa;">
+  <div id="root"></div>
+  <script type="module">
+    import AiriaChat from "https://chat.airia.ai/api/get-chat-embed";
+    AiriaChat.init({
+      pipelineId: "855487da-dc5c-454d-9366-082aaeaf5354",
+      apiKey: "ak-NDIwNzYzNjA4NnwxNzQ1ODYyNTMwOTA3fE1hY0dpbGxpdnJheSBJbmp1cnkgYW5kIEluc3VyYW5jZSBMYXctfDF8MTcyMDU1Njk2",
+      apiUrl: "https://embed-api.airia.ai",
+      greeting: "Hello! How can I assist you today?",
+      imagePath: "https://yoursite.com/assets/chatbot-icon.png",
+      imageSize: "small"
+    });
+  </script>
+</body>
+</html>
